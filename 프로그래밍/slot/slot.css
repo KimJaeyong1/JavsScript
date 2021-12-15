@@ -1,0 +1,40 @@
+#congratulation {
+    color: red;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    font-size: 20px;
+}
+
+.num_1 {
+    background-color: red;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    border: 5px solid pink;
+}
+
+.num_2 {
+    background-color: red;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    border: 5px solid pink;
+}
+
+.num_3 {
+    background-color: red;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    border: 5px solid pink;
+}
+
+#f5 {
+    position: absolute;
+    top: 160px;
+    left: 70px;
+}
