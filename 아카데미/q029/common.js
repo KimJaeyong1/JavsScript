@@ -5,3 +5,7 @@ function dw (str) {
 function br () {
     document.write("<br>");
 }
+
+function refreshPage(){
+    window.location.reload();
+}
