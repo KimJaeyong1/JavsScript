@@ -1,4 +1,7 @@
-// Rock Paper Scissors
+////////////////////////////////
+//  Rock Paper Scissors v1.0  //
+////////////////////////////////
+
 var player = prompt("가위=1 바위=2 보=3")
 var com = Math.floor(Math.random()*3+1);
 
