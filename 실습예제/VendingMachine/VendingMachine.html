@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vending.css">
+    <title>VendingMachine</title>
+</head>
+<body>
+    <div id=vending>
+        <div id="vending_image">
+            <img id="image" src="image/water.jpg">
+            <img id="image" src="image/coffie.jpg">
+            <img id="image" src="image/coke.jpg">
+            <img id="image" src="image/pocari.jpg">
+            <img id="image" src="image/vita.jpg">
+            <img id="image" src="image/monster.jpg">
+        </div>
+        <div id="vending_menu">
+            <input type="button" id="water" value="물 (500원)">
+            <input type="button" id="coffie" value="커피 (700원)">
+            <input type="button" id="coke" value="콜라 (1200원)">
+            <input type="button" id="pocari" value="포카리스웨트 (1100원)">
+            <input type="button" id="vita" value="Vita 500 (900원)">
+            <input type="button" id="monster" value="몬스터 (2000원)">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="vending_charge">
+        <input type="button" id="charge_btn1" value="100원 충전!">
+        <input type="button" id="charge_btn2" value="500원 충전!">
+        <input type="button" id="charge_btn3" value="1,000원 충전!">
+    </div>
+    <br>
+    <br>
+    <p id="coin">현재 금액 : <span id="balance"></span></p>
+
+    <script src="vending.js"></script>
+</body>
+</html>
