@@ -1,25 +1,34 @@
-var lottoNumbers = Array(6);
+var lottoNumbers = new Array(6);
 
 
 for (var i=0; i<lottoNumbers.length; i++){
     lottoNumbers[i] = Math.floor(Math.random()*45)+1;
-    dw(lottoNumbers[i] + " ");
+    for (var j=0; j<i; j++) {
+        if(lottoNumbers[i] == lottoNumbers[j]) {
+            i= i-1;
+            break;
+        }
     }
+}
+dw(lottoNumbers);
 
 br();
 br();
+
+
+
+
 
 var myLotto = [1, 11, 21, 31, 41, 45];
 dw(myLotto);
 br();
 var lottoCount = 0;
 
-for (var j=0; j<6; j++) {
-    if (myLotto[0] == lottoNumbers[j]) {
+for (var k=0; k<6; k++) {
+    if (myLotto[0] == lottoNumbers[k]) {
         lottoCount = lottoCount + 1;
     }
 }
-
 
 // if (myLotto[0] == lottoNumbers[0]) {
 //     lottoCount = lottoCount + 1;
@@ -103,10 +112,8 @@ if (myLotto[5] == lottoNumbers[0]) {
     lottoCount = lottoCount + 1;
 } else if (myLotto[5] == lottoNumbers[5]) {
     lottoCount = lottoCount + 1;
-} else {
-    dw(" 낙첨 되었습니다.")
-    br();
 }
 
 br();
 dw(lottoCount + "개 일치 합니다")
+
