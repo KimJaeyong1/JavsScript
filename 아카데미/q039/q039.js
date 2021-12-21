@@ -1,23 +1,88 @@
-var lottoNumbers = new Array(6);
+var lottoNumbers = Array(6);
 
 
-for (var i=0; i<lottoNumbers.length; i++){
-    lottoNumbers[i] = Math.floor(Math.random()*45)+1;
-    for (var j=0; j<i; j++) {
-        if(lottoNumbers[i] == lottoNumbers[j]) {
-            i= i-1;
-            break;
-        }
+lottoNumbers[0] = Math.floor(Math.random()*45)+1;
+// 1번째 번호
+dw(lottoNumbers[0]);
+hr();
+// 2번째 번호
+while (true) {
+    lottoNumbers[1] = Math.floor(Math.random()*45)+1;
+    if (lottoNumbers[0] == lottoNumbers[1])
+        continue;
+    else {
+        dw(lottoNumbers[1]);
+        hr();
+        break;
     }
 }
-dw(lottoNumbers);
+// 3번째 번호
+while (true) {
+    lottoNumbers[2] = Math.floor(Math.random()*45)+1;
+    if (lottoNumbers[0] == lottoNumbers[2]) {
+        continue;
+    } else if (lottoNumbers[1] == lottoNumbers[2]) {
+        continue;
+    } else {
+        dw(lottoNumbers[2]);
+        hr();
+        break;
+    }
+}
+// 4번째 번호
+while (true) {
+    lottoNumbers[3] = Math.floor(Math.random()*45)+1;
+    if (lottoNumbers[0] == lottoNumbers[3]) {
+        continue;
+    } else if (lottoNumbers[1] == lottoNumbers[3]) {
+        continue;
+    } else if (lottoNumbers[2] == lottoNumbers[3]) {
+        continue;
+    } else {
+        dw(lottoNumbers[3]);
+        hr();
+        break;
+    }
+}
+// 5번째 번호
+while (true) {
+    lottoNumbers[4] = Math.floor(Math.random()*45)+1;
+    if (lottoNumbers[0] == lottoNumbers[4]) {
+        continue;
+    } else if (lottoNumbers[1] == lottoNumbers[4]) {
+        continue;
+    } else if (lottoNumbers[2] == lottoNumbers[4]) {
+        continue;
+    } else if (lottoNumbers[3] == lottoNumbers[4]) {
+        continue;
+    } else {
+        dw(lottoNumbers[4]);
+        hr();
+        break;
+    }
+}
+// 6번째 번호
+while (true) {
+    lottoNumbers[5] = Math.floor(Math.random()*45)+1;
+    if (lottoNumbers[0] == lottoNumbers[5]) {
+        continue;
+    } else if (lottoNumbers[1] == lottoNumbers[5]) {
+        continue;
+    } else if (lottoNumbers[2] == lottoNumbers[5]) {
+        continue;
+    } else if (lottoNumbers[3] == lottoNumbers[5]) {
+        continue;
+    } else if (lottoNumbers[4] == lottoNumbers[5]) {
+        continue;
+    } else {
+        dw(lottoNumbers[5]);
+        hr();
+        break;
+    }
+}
 
 br();
 br();
-
-
-
-
 
 var myLotto = [1, 11, 21, 31, 41, 45];
 dw(myLotto);
@@ -115,5 +180,4 @@ if (myLotto[5] == lottoNumbers[0]) {
 }
 
 br();
-dw(lottoCount + "개 일치 합니다")
-
+dw(lottoCount + "개 일치합니다")

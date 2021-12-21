@@ -15,13 +15,30 @@ br();
 br();
 
 var bonusNum;
-bonusNum = Math.floor(Math.random() * 45) + 1;
-dw("보너스 번호: " + bonusNum)
+while (true) {
+    bonusNum = Math.floor(Math.random() * 45) + 1;
+    if (bonusNum == lottoNumbers[0]) {
+        continue;
+    } else if (bonusNum == lottoNumbers[1]) {
+        continue;
+    } else if (bonusNum == lottoNumbers[2]) {
+        continue;
+    } else if (bonusNum == lottoNumbers[3]) {
+        continue;
+    } else if (bonusNum == lottoNumbers[4]) {
+        continue;
+    } else if (bonusNum == lottoNumbers[5]) {
+        continue;
+    } else {
+        dw("보너스 번호: " + bonusNum)
+        break;
+    }
+}
 
 br();
 br();
 
-var myLotto = [1, 3, 27, 15, 35, 40];
+var myLotto = [1, 2, 3, 4, 5, 6];
 dw(myLotto);
 br();
 

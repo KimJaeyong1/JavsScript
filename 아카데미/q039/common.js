@@ -6,7 +6,6 @@ function br () {
     document.write("<br>");
 }
 
-function refreshPage(){
-    window.location.reload();
+function hr () {
+    document.write("<hr>");
 }
-
