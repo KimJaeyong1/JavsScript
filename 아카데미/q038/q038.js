@@ -100,9 +100,6 @@ if (myLotto[5] == lottoNumbers[0]) {
     lottoCount = lottoCount + 1;
 } else if (myLotto[5] == lottoNumbers[5]) {
     lottoCount = lottoCount + 1;
-} else {
-    dw(" 낙첨 되었습니다.")
-    br();
 }
 
 br();
