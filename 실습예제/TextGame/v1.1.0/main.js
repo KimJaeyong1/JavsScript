@@ -59,9 +59,25 @@ function gold() {
 	tv("전리품 " + mon.gold + "골드를 획득하였습니다\n")
 }
 
+// 전투 시작 버튼 테스트
+function turn() {
+	console.log("로그찍기");
+}
+
+// 전투 시작 버튼 카운트 
+var count = 0;
+function countBtn() {
+	count ++;
+	document.getElementById("playCount").value = count;
+}
+
 window.onload = function() {
+	// 출력 관련
 	screenMessageBox = document.getElementById("screen");
 	screenPlayerBox = document.getElementById("screenPlayerInfo");
+
+	// 전투 시작 버튼 테스트 관련
+	document.getElementById("Playturn").addEventListener('click',turn);
 	
 	tv("전투 시작!\n");
 	tv("\n");
@@ -72,15 +88,4 @@ window.onload = function() {
 		loof = turnplay();
 	}
 
-	document.getElementById("Playturn").addEventListener('click',turn);
-	
-	function turn() {
-		console.log("로그찍기");
-	}
-}
-
-var count = 0;
-function countBtn() {
-	count ++;
-	document.getElementById("playCount").value = count;
 }
