@@ -1,0 +1,24 @@
+#screenMonsterInfo {
+    background: lightseagreen;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#screen {
+    background: lightpink;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+
+#screenPlayerInfo {
+    background: lightskyblue;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+#playCount {
+    width: 30px;
+}
