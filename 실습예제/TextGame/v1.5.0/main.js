@@ -5,10 +5,11 @@
 // 플레이어 몬스터 클래스 속성 입력
 var cha = new Player ("팔라딘", 150, 150, 50, 0, 300, 0);
 var mon = new Monster ("고블린", 100, 100, 20, 50, 100);
-var currentMode = "전투";
+var currentMode = "대기";
 var screenMessageBox;
 var screenPlayerBox;
 var screenMonsterBox;
+var count = 0;
 
 window.onload = function() {
 	// 출력 관련
@@ -22,7 +23,7 @@ window.onload = function() {
 	// totalinfo();
 	totalinfo();
 
-	tv("전투 시작!\n");
-	tv("\n");
+	// tv("전투 시작!\n");
+	// tv("\n");
 
 }

@@ -32,12 +32,17 @@ function turnplay() {
 	
 }
 
+function nonturnplay() {
+	// textClean();
+	tv("특별한 것은 보이지 않는다.\n");
+}
+
 // 전투 시작 버튼
 function turn() {
     if (currentMode == "전투") {
         turnplay();
     } else {
-        textClean();
+        nonturnplay();
     }
 		// if (cha.hp <= 0 || mon.hp <= 0) {
 		// 	// btnDisabled();
@@ -82,7 +87,6 @@ function gold() {
 
 
 // 전투 시작 버튼 카운트 
-var count = 0;
 function countBtn() {
 	count ++;
 	document.getElementById("playCount").value = count;
@@ -94,9 +98,11 @@ function countBtn() {
 //   }
 
 function textClean() {
-	document.getElementById("screenMonsterInfo").value = '';
 	document.getElementById("screen").value = '';
-    tv("전투 대기 중~")
+}
+
+function monsterClean() {
+	document.getElementById("screenMonsterInfo").value = '';
 }
 
 // 스크롤
@@ -104,3 +110,34 @@ function scrollAuto() {
     var scrollBottom = document.getElementById("screen");
     scrollBottom.scrollTop = scrollBottom.scrollHeight;
 }
+
+// 이동 버튼
+function moveEast(){	
+	tv("동쪽으로 이동했습니다.");
+	turn();
+}
+
+function moveWest(){	
+	tv("서쪽으로 이동했습니다.");
+	turn();
+}	
+
+function moveSouth(){	
+	tv("남쪽으로 이동했습니다.");
+	turn();
+}	
+
+function moveNorth(){	
+	tv("북쪽으로 이동했습니다.");
+	turn();
+}	
+
+function moveUp(){	
+	tv("위쪽으로 이동했습니다.");
+	turn();
+}	
+
+function moveDown(){	
+	tv("밑쪽으로 이동했습니다.");
+	turn();
+}	
