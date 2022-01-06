@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>    
+    <link rel="stylesheet" href="main.css">
+    <script src="dispaly.js"> </script>
+    <script src="Monster.js"> </script>
+    <script src="Character.js"> </script>
+    <script src="function.js"> </script>
+    <script src="room.js"> </script>
+    <script src="main.js"> </script>
+</head>
+<body>
+    <textarea id="screenMonster" readonly="readonly"></textarea>
+    <textarea id="screenMain" readonly="readonly"></textarea>
+    <textarea id="screenPlayer" readonly="readonly"></textarea>
+    <input id="countBox" type="text" readonly>
+    <input id="playTurn" type="button" value="턴 진행" onclick="turn()">
+    <input id="playTurn" type="button" value="동" onclick="move('동');">
+    <input id="playTurn" type="button" value="서" onclick="move('서');">
+    <input id="playTurn" type="button" value="남" onclick="move('남');">
+    <input id="playTurn" type="button" value="북" onclick="move('북');">
+    <input id="playTurn" type="button" value="위" onclick="move('위');">
+    <input id="playTurn" type="button" value="밑" onclick="move('밑');">
+</body>    
+</html>

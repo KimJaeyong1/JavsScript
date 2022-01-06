@@ -1,0 +1,27 @@
+#loginMain {
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+    background: url(back.jpeg);
+    border-radius: 5px;
+
+}
+
+#loginId {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+#loginPw {
+    margin-top: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+#loginBt {
+    margin-top: 5px;
+    margin-left: 10px;
+}
