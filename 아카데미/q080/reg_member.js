@@ -42,8 +42,21 @@ function lengthConfirm() {
         lastNumberConfirm()
     )
     {
+        userInfo();
         alert("회원가입에 성공하였습니다.\n");
     }
+}
+
+function userInfo() {
+    alert(
+        "입력한 정보\n\n"
+        +"아이디: "+getId.value+"\n"
+        +"생년월일: "+getBirth.value+"."+getMonth.value+"."+getDay.value+"\n"
+        +"이름: "+getName.value+"\n"
+        +"이메일: "+getMail.value+"\n"
+        +"성별: "+gender+"\n"
+        +"전화번호: "+getfirstNumber.value+"-"+getmiddleNumber.value+"-"+getlastNumber.value
+        );
 }
 
 function idConfirm() {
