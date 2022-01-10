@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="reg_member.js"></script>
+    <link rel="stylesheet" href="reg_member.css">
+</head>
+<body>
+    <div id="content">
+        <div id="main_box">
+            <form>
+                <fieldset id="personal_info">
+                    <legend>회원가입 정보 입력</legend>
+                    <input id="input_id" type="text" placeholder="아이디" minlength="4" maxlength="10" required placeholder="(6자리이상,12자리이하)">
+                    <input id="input_pw" type="password" placeholder="암호" minlength="4" maxlength="10">
+                    <input id="input_pw_confirm" type="password" placeholder="암호 재입력" minlength="4" maxlength="10">
+                    <br>
+                    <input id="birth" type="number" value="2022">
+                    <select id="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="day">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <br>
+                    <input id="input_name" type="text" placeholder="이름" minlength="4" maxlength="10">
+                    <input id="input_mail" type="text" placeholder="이메일" minlength="4" maxlength="15">
+                    <input id="mail_domain" type="text" placeholder="주소" minlength="4" maxlength="15">
+                    <select id="domain_choice" onchange="putinMail()">
+                        <option value="">선택하세요</option>
+                        <option value="@naver.com">naver.com</option>
+                        <option value="@daum.net">daum.net</option>
+                        <option value="@google.com">google.com</option>
+                        <option value="@">직접입력</option>
+                    </select>
+                    <br>
+                    <input id="male" type="radio" name="sex" value="M" checked>남성
+                    <input id="female" type="radio" name="sex" value="F">여성
+                    <br>
+                    <input id="input_number_first" type="number" placeholder="010" min="2" max="3">
+                    <input id="input_number_middle" type="number" placeholder="0000" min="4" max="4">
+                    <input id="input_number_last" type="number" placeholder="0000" min="4" max="4">
+                    <br>
+                </fieldset>
+                    <input id="signup_button" type="submit" value="회원가입" onclick="lengthConfirm()">
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>

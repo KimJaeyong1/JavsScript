@@ -1,0 +1,71 @@
+body {
+    background: url(background.jpg);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main_box {
+  justify-items: center;
+  width: 700px;
+  height: 300px;
+  
+}
+
+#personal_info {
+  margin: auto;
+  width: 600px;
+}
+
+#input_id {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#birth {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#input_name {
+  margin-top: 20px;
+  width: 120px;
+  margin-left: 30px;
+}
+
+#input_mail {
+  width: 120px;
+}
+
+#mail_domain {
+  width: 120px;
+}
+
+#male {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#input_number_first {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+#signup_button {
+  width: 130px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 280px;;
+ 
+}
